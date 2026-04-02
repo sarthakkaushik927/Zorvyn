@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-/* ===================== THEME TOKENS ===================== */
 @theme {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-display: 'Outfit', system-ui, sans-serif;
@@ -12,7 +11,6 @@
   --header-h: 70px;
 }
 
-/* ===================== CSS VARIABLES (dynamic theming) ===================== */
 :root {
   --accent: #6c63ff;
   --accent-rgb: 108, 99, 255;
@@ -48,7 +46,6 @@
   --shadow: 0 4px 24px rgba(0,0,0,0.1);
 }
 
-/* ===================== BASE ===================== */
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -64,7 +61,6 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--border-col); border-radius: 99px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
-/* ===================== KEYFRAMES ===================== */
 @keyframes shimmer {
   0%   { background-position: -1000px 0; }
   100% { background-position:  1000px 0; }
@@ -80,12 +76,10 @@ body {
   50%       { box-shadow: 0 0 0 8px rgba(var(--accent-rgb), 0); }
 }
 
-/* ===================== UTILITIES ===================== */
 .font-display { font-family: 'Outfit', system-ui, sans-serif; }
 .animate-fade-up { animation: fadeUp 0.45s cubic-bezier(0.4,0,0.2,1) both; }
 .accent-glow { animation: pulse-glow 2s ease infinite; }
 
-/* Skeleton shimmer */
 .skeleton {
   border-radius: 8px;
   animation: shimmer 2s linear infinite;
@@ -100,7 +94,6 @@ body {
   background-size: 1000px 100%;
 }
 
-/* Recharts custom tooltip */
 .custom-tooltip {
   background: var(--bg-card);
   border: 1px solid var(--border-col);
@@ -109,6 +102,5 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Custom scrollbar for transaction list */
 .tx-list::-webkit-scrollbar { width: 4px; }
 .tx-list::-webkit-scrollbar-thumb { background: var(--border-col); border-radius: 99px; }

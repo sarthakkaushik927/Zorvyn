@@ -31,7 +31,7 @@ const makeTransaction = (id, date, amount, category, type, description, pinned =
 });
 
 export const INITIAL_TRANSACTIONS = [
-  // October 2024
+  
   makeTransaction(uuidv4(), '2024-10-01', 85000, 'Salary', 'income', 'Monthly Salary'),
   makeTransaction(uuidv4(), '2024-10-02', 15000, 'Rent', 'expense', 'October Rent'),
   makeTransaction(uuidv4(), '2024-10-03', 1200, 'Food', 'expense', 'Grocery Shopping'),
@@ -48,7 +48,6 @@ export const INITIAL_TRANSACTIONS = [
   makeTransaction(uuidv4(), '2024-10-28', 1500, 'Entertainment', 'expense', 'Concert Tickets'),
   makeTransaction(uuidv4(), '2024-10-30', 400, 'Transport', 'expense', 'Cab Rides'),
 
-  // November 2024
   makeTransaction(uuidv4(), '2024-11-01', 85000, 'Salary', 'income', 'Monthly Salary', true),
   makeTransaction(uuidv4(), '2024-11-02', 15000, 'Rent', 'expense', 'November Rent'),
   makeTransaction(uuidv4(), '2024-11-04', 980, 'Food', 'expense', 'Grocery Shopping'),
@@ -63,7 +62,6 @@ export const INITIAL_TRANSACTIONS = [
   makeTransaction(uuidv4(), '2024-11-25', 650, 'Food', 'expense', 'Weekly Groceries'),
   makeTransaction(uuidv4(), '2024-11-28', 3000, 'Investment', 'income', 'Stock Profit'),
 
-  // December 2024
   makeTransaction(uuidv4(), '2024-12-01', 85000, 'Salary', 'income', 'Monthly Salary'),
   makeTransaction(uuidv4(), '2024-12-02', 15000, 'Rent', 'expense', 'December Rent'),
   makeTransaction(uuidv4(), '2024-12-03', 1350, 'Food', 'expense', 'Grocery Shopping'),
@@ -77,7 +75,6 @@ export const INITIAL_TRANSACTIONS = [
   makeTransaction(uuidv4(), '2024-12-25', 800, 'Entertainment', 'expense', 'Streaming Services'),
   makeTransaction(uuidv4(), '2024-12-28', 7500, 'Investment', 'income', 'Year-End Bonus'),
 
-  // January 2025
   makeTransaction(uuidv4(), '2025-01-01', 90000, 'Salary', 'income', 'Monthly Salary (Raise!)'),
   makeTransaction(uuidv4(), '2025-01-02', 15000, 'Rent', 'expense', 'January Rent'),
   makeTransaction(uuidv4(), '2025-01-04', 1100, 'Food', 'expense', 'Grocery Shopping'),
@@ -90,7 +87,6 @@ export const INITIAL_TRANSACTIONS = [
   makeTransaction(uuidv4(), '2025-01-24', 1800, 'Healthcare', 'expense', 'Gym Membership'),
   makeTransaction(uuidv4(), '2025-01-28', 600, 'Food', 'expense', 'Weekly Groceries'),
 
-  // February 2025
   makeTransaction(uuidv4(), '2025-02-01', 90000, 'Salary', 'income', 'Monthly Salary'),
   makeTransaction(uuidv4(), '2025-02-02', 15000, 'Rent', 'expense', 'February Rent'),
   makeTransaction(uuidv4(), '2025-02-03', 1250, 'Food', 'expense', 'Grocery Shopping'),
@@ -103,7 +99,6 @@ export const INITIAL_TRANSACTIONS = [
   makeTransaction(uuidv4(), '2025-02-25', 700, 'Food', 'expense', 'Weekly Groceries'),
   makeTransaction(uuidv4(), '2025-02-28', 10000, 'Investment', 'income', 'Mutual Fund Returns'),
 
-  // March 2025
   makeTransaction(uuidv4(), '2025-03-01', 90000, 'Salary', 'income', 'Monthly Salary'),
   makeTransaction(uuidv4(), '2025-03-02', 15000, 'Rent', 'expense', 'March Rent'),
   makeTransaction(uuidv4(), '2025-03-04', 1400, 'Food', 'expense', 'Grocery Shopping'),

@@ -49,8 +49,7 @@ export default function Insights() {
 
   return (
     <div className="page-transition max-w-[1200px] mx-auto pb-10">
-      
-      {/* Header Banner */}
+
       <div className="mb-8 p-8 rounded-3xl relative overflow-hidden flex items-center gap-6"
         style={{ background: 'linear-gradient(135deg, rgba(var(--accent-rgb), 0.1) 0%, transparent 100%)', border: '1px solid rgba(var(--accent-rgb),0.2)' }}>
         
@@ -98,8 +97,6 @@ export default function Insights() {
           delay={0.2}
         />
       </div>
-
-      {/* Health Score Details could go here */}
 
     </div>
   );

@@ -36,7 +36,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
           transition: 'transform 0.3s ease',
         }}
       >
-        {/* Logo */}
+        
         <div className="flex items-center gap-3 px-5 py-6" style={{ borderBottom: '1px solid var(--border-col)' }}>
           <motion.div
             whileHover={{ scale: 1.1, rotate: 8 }}
@@ -52,7 +52,6 @@ export default function Sidebar({ mobileOpen, onClose }) {
           </div>
         </div>
 
-        {/* Nav */}
         <nav className="flex-1 px-3 py-4 flex flex-col gap-1 overflow-y-auto">
           <div className="text-xs font-semibold uppercase tracking-widest px-2 py-2" style={{ color: 'var(--text-muted)' }}>Main</div>
 
@@ -106,7 +105,6 @@ export default function Sidebar({ mobileOpen, onClose }) {
           </div>
         </nav>
 
-        {/* Bottom stats */}
         <div className="p-3" style={{ borderTop: '1px solid var(--border-col)' }}>
           <div className="p-4 rounded-xl" style={{ background: 'rgba(var(--accent-rgb), 0.08)', border: '1px solid rgba(var(--accent-rgb), 0.15)' }}>
             <div className="flex items-center gap-2 mb-2">

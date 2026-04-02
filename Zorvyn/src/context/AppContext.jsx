@@ -98,7 +98,6 @@ function reducer(state, action) {
 export function AppProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // Load from localStorage
   useEffect(() => {
     const saved = localStorage.getItem('finance_transactions');
     const savedPrefs = localStorage.getItem('finance_prefs');
@@ -115,14 +114,12 @@ export function AppProvider({ children }) {
     }
   }, []);
 
-  // Persist transactions
   useEffect(() => {
     if (state.transactions.length > 0) {
       localStorage.setItem('finance_transactions', JSON.stringify(state.transactions));
     }
   }, [state.transactions]);
 
-  // Persist prefs
   useEffect(() => {
     localStorage.setItem('finance_prefs', JSON.stringify({
       theme: state.theme,
@@ -132,7 +129,6 @@ export function AppProvider({ children }) {
     }));
   }, [state.theme, state.accentColor, state.currency, state.density]);
 
-  // Apply theme & accent to DOM
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', state.theme);
     document.documentElement.style.setProperty('--accent', ACCENT_COLORS[state.accentColor]);

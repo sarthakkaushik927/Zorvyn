@@ -63,7 +63,6 @@ export default function SpendingDonut() {
         </PieChart>
       </ResponsiveContainer>
 
-      {/* Legend */}
       <div className="flex flex-col gap-2 mt-2">
         {data.map((d, i) => (
           <motion.div

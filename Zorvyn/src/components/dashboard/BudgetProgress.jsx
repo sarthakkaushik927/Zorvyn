@@ -5,8 +5,7 @@ import { getCategoryBreakdown, CATEGORIES } from '../../data/mockData.js';
 
 export default function BudgetProgress() {
   const { transactions, formatAmount } = useApp();
-  
-  // Get expenses for current month
+
   const currentMonthPrefix = '2025-03';
   const currentMonthTx = transactions.filter(t => t.date.startsWith(currentMonthPrefix) && t.type === 'expense');
   

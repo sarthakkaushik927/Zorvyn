@@ -21,8 +21,7 @@ export default function Transactions() {
 
   return (
     <div className="page-transition flex flex-col h-[calc(100vh-130px)]">
-      
-      {/* Header Actions */}
+
       <div className="flex items-end justify-between mb-5 flex-shrink-0">
         <TransactionFilters />
 
@@ -59,7 +58,6 @@ export default function Transactions() {
         </div>
       </div>
 
-      {/* Main List */}
       <div className="flex-1 bg-card rounded-2xl border overflow-hidden flex flex-col relative"
         style={{ background: 'var(--bg-card)', borderColor: 'var(--border-col)' }}>
         <TransactionList />

@@ -23,7 +23,7 @@ export default function SummaryCard({ label, rawValue, change, changeLabel, colo
         '--card-rgb': colorRgb,
       }}
     >
-      {/* Glow blob */}
+      
       <div
         className="absolute top-0 right-0 w-32 h-32 rounded-full pointer-events-none"
         style={{
@@ -32,7 +32,6 @@ export default function SummaryCard({ label, rawValue, change, changeLabel, colo
         }}
       />
 
-      {/* Icon */}
       <motion.div
         whileHover={{ scale: 1.15, rotate: 8 }}
         transition={{ type: 'spring', stiffness: 300 }}
@@ -42,12 +41,10 @@ export default function SummaryCard({ label, rawValue, change, changeLabel, colo
         {icon}
       </motion.div>
 
-      {/* Label */}
       <div className="text-xs font-semibold uppercase tracking-widest mb-1.5" style={{ color: 'var(--text-secondary)', letterSpacing: '0.06em' }}>
         {label}
       </div>
 
-      {/* Value */}
       <div
         ref={countRef}
         className="text-3xl font-bold leading-tight"
@@ -56,7 +53,6 @@ export default function SummaryCard({ label, rawValue, change, changeLabel, colo
         {formatAmount(rawValue)}
       </div>
 
-      {/* Change badge */}
       <div className="inline-flex items-center gap-1 mt-2 px-2 py-1 rounded-full text-xs font-semibold"
         style={{
           background: isPositive ? 'rgba(0,212,170,0.12)' : 'rgba(255,107,107,0.12)',
@@ -66,7 +62,6 @@ export default function SummaryCard({ label, rawValue, change, changeLabel, colo
         {Math.abs(change)}% {changeLabel}
       </div>
 
-      {/* Sparkline */}
       {sparkData && (
         <div className="mt-3 h-12">
           <SparklineChart data={sparkData} color={`rgba(${colorRgb},0.8)`} />

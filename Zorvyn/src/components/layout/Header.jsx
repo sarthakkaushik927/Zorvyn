@@ -26,16 +26,14 @@ export default function Header({ onMenuToggle, title, subtitle }) {
         transition: 'background 0.3s ease, left 0.3s ease',
       }}
     >
-      {/* Left: Page title */}
+      
       <div>
         <h1 className="text-xl font-bold leading-tight" style={{ fontFamily: 'Outfit, sans-serif', color: 'var(--text-primary)' }}>{title}</h1>
         {subtitle && <p className="text-xs" style={{ color: 'var(--text-secondary)' }}>{subtitle}</p>}
       </div>
 
-      {/* Right: Controls */}
       <div className="flex items-center gap-3">
 
-        {/* Accent Color Picker */}
         <div className="flex items-center gap-2">
           {Object.entries(ACCENTS).map(([name, color]) => (
             <motion.button
@@ -56,7 +54,6 @@ export default function Header({ onMenuToggle, title, subtitle }) {
 
         <div className="w-px h-6" style={{ background: 'var(--border-col)' }} />
 
-        {/* Currency */}
         <select
           value={currency}
           onChange={e => dispatch({ type: 'SET_CURRENCY', payload: e.target.value })}
@@ -70,7 +67,6 @@ export default function Header({ onMenuToggle, title, subtitle }) {
           {['USD', 'INR', 'EUR', 'GBP'].map(c => <option key={c} value={c}>{c}</option>)}
         </select>
 
-        {/* Role Switcher */}
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border"
           style={{ background: 'var(--bg-card)', borderColor: 'var(--border-col)' }}>
           <span className="w-2 h-2 rounded-full"
@@ -86,7 +82,6 @@ export default function Header({ onMenuToggle, title, subtitle }) {
           </select>
         </div>
 
-        {/* Theme Toggle */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

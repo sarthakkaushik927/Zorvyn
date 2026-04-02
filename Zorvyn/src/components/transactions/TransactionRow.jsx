@@ -83,7 +83,6 @@ export default function TransactionRow({ tx, selected }) {
   );
 }
 
-// Utility for hover background
 function hexToRgb(hex) {
   if(!hex) return '136, 136, 136';
   const r = parseInt(hex.slice(1, 3), 16);

@@ -63,8 +63,7 @@ export default function AddTransactionModal({ onClose }) {
           </h2>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-            
-            {/* Type Toggle */}
+
             <div className="flex p-1 rounded-xl" style={{ background: 'var(--bg-input)' }}>
               {['expense', 'income'].map(type => (
                 <div
@@ -82,7 +81,6 @@ export default function AddTransactionModal({ onClose }) {
               ))}
             </div>
 
-            {/* Amount */}
             <div>
               <label className="block text-xs font-semibold mb-1.5 ml-1 uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>Amount</label>
               <div className="relative">
@@ -101,7 +99,6 @@ export default function AddTransactionModal({ onClose }) {
               </div>
             </div>
 
-            {/* Description */}
             <div>
               <label className="block text-xs font-semibold mb-1.5 ml-1 uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>Description</label>
               <input
@@ -117,7 +114,7 @@ export default function AddTransactionModal({ onClose }) {
             </div>
 
             <div className="flex gap-4">
-              {/* Category */}
+              
               <div className="flex-1">
                 <label className="block text-xs font-semibold mb-1.5 ml-1 uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>Category</label>
                 <select
@@ -132,7 +129,6 @@ export default function AddTransactionModal({ onClose }) {
                 </select>
               </div>
 
-              {/* Date */}
               <div className="flex-1">
                 <label className="block text-xs font-semibold mb-1.5 ml-1 uppercase tracking-wider" style={{ color: 'var(--text-secondary)' }}>Date</label>
                 <input

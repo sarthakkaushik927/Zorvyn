@@ -16,8 +16,7 @@ export default function TransactionFilters() {
 
   return (
     <div className="flex flex-wrap items-center gap-3">
-      
-      {/* Search */}
+
       <div className="relative">
         <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: 'var(--text-muted)' }} />
         <input 
@@ -35,7 +34,6 @@ export default function TransactionFilters() {
         />
       </div>
 
-      {/* Category Filter */}
       <div className="flex items-center gap-2 px-3 py-2 rounded-xl border" style={{ background: 'var(--bg-card)', borderColor: 'var(--border-col)' }}>
         <Filter size={14} style={{ color: 'var(--text-muted)' }} />
         <select 
@@ -49,7 +47,6 @@ export default function TransactionFilters() {
         </select>
       </div>
 
-      {/* Type Filter */}
       <select 
         value={filters.type} 
         onChange={(e) => handleFilterChange('type', e.target.value)}
@@ -61,7 +58,6 @@ export default function TransactionFilters() {
         <option value="expense">Expense</option>
       </select>
 
-      {/* Sort Options */}
       <div className="flex items-center rounded-xl border overflow-hidden" style={{ borderColor: 'var(--border-col)' }}>
         <select 
           value={filters.sortBy} 
@@ -81,7 +77,6 @@ export default function TransactionFilters() {
         </button>
       </div>
 
-      {/* Pinned Toggle */}
       <button
         onClick={() => dispatch({ type: 'SET_PINNED_ONLY', payload: !pinnedOnly })}
         className="px-3 py-2 rounded-xl text-sm font-semibold transition-all border"

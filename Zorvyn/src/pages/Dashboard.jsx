@@ -18,8 +18,7 @@ export default function Dashboard() {
 
   return (
     <div className="page-transition flex flex-col gap-6 max-w-[1400px] mx-auto pb-10">
-      
-      {/* 1. Summary Cards Row */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         <SummaryCard 
           label="Total Balance"
@@ -62,7 +61,6 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* 2. Charts Row */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className="lg:col-span-2">
           <BalanceTrendChart />
